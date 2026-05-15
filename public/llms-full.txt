@@ -1,0 +1,140 @@
+# Auqira — Complete Information
+
+> Auqira provides fixed-price AI Workflow Audits for recruitment agencies, delivered in 7 business days with ROI projections and a 90-day implementation roadmap.
+
+---
+
+## About Auqira
+
+Auqira helps recruitment agencies discover exactly where AI can save 10–20 hours per recruiter weekly. Founded by Soham Singh, we turn AI experimentation into measurable operational outcomes through structured workflow analysis and executive-level recommendations.
+
+Our methodology is simple: Analyze your workflows, map AI opportunities, project ROI, and hand you a practical roadmap. No fluff. No buzzwords. Just results.
+
+We specialize in helping service businesses — particularly boutique recruitment agencies, executive search firms, and specialized staffing firms — uncover hidden capacity and prioritize high-ROI AI opportunities.
+
+---
+
+## The Problem We Solve
+
+Most recruitment agencies leave AI value on the table due to four key challenges:
+
+1. **Recruiters Buried in Manual Tasks** — Hours daily on admin work that should be automated, pulling focus from revenue-generating activities.
+2. **Fragmented AI Tool Usage** — No coordinated strategy means inconsistent results, wasted subscriptions, and missed productivity gains.
+3. **Slow Response Times** — Manual workflows delay candidate outreach and engagement, costing placements and reputation.
+4. **No Implementation Roadmap** — Without a clear plan, AI adoption stalls or fails to deliver measurable ROI on investment.
+
+---
+
+## Service: AI Workflow Audit
+
+### Overview
+A comprehensive, fixed-price AI Workflow Audit designed specifically for recruitment agencies. The audit identifies where AI can deliver real, measurable value and provides a clear implementation plan.
+
+### Pricing
+- **Founding Client Rate:** $1,500 (normally $3,000 — 50% off)
+- **Availability:** Limited to the first 3 agencies
+- **Delivery:** 7 business days, guaranteed
+
+### What's Included
+
+1. **30-Minute Discovery Call** — Intake session to understand your current workflows, team structure, and goals.
+2. **Full Workflow Audit & Analysis** — Deep audit of recruitment processes to identify pain points and automation opportunities.
+3. **AI Opportunity Matrix** — A 2×2 matrix that maps every AI opportunity by ROI impact vs implementation effort, showing you exactly where to start.
+4. **Tool & Integration Recommendations** — Specific AI tools and integrations matched to your needs, including pricing and compatibility notes.
+5. **Conservative ROI Projections** — Metrics-driven estimates of time saved and revenue potential for each recommended opportunity.
+6. **90-Day Implementation Roadmap** — Step-by-step, phased implementation plan with milestones and success metrics.
+7. **Executive Debrief & Q&A** — 30-minute presentation of findings and recommendations with time for questions.
+8. **Delivered in Google Slides** — Professional, shareable format ready for internal distribution.
+
+---
+
+## Target Audience
+
+### Boutique Recruitment Agencies
+10–50 headcount firms that are scaling operations with AI to compete with larger organizations. These agencies benefit most from identifying quick wins that free up recruiter time for revenue-generating activities.
+
+### Executive Search Firms
+High-touch search processes that benefit from AI-powered research, candidate outreach, and interview scheduling automation. The audit identifies where AI can augment (not replace) the personal touch.
+
+### Specialized Staffing Firms
+Niche verticals with complex, industry-specific workflows that are ripe for intelligent automation. The audit maps opportunities specific to your industry context.
+
+---
+
+## Expected Outcomes
+
+- **10–20 hours saved** per recruiter per week
+- **$25K–$100K annual productivity** potential value unlocked
+- **7 business days** to complete delivery
+- **10x+ ROI** from one additional placement enabled by time saved
+
+These are conservative estimates based on typical recruitment workflow patterns. Actual results may exceed projections.
+
+---
+
+## AI Opportunity Matrix (Sample)
+
+The audit produces a prioritized matrix of AI opportunities:
+
+| Quadrant | Example | Impact |
+|----------|---------|--------|
+| High ROI / Low Effort | Interview Scheduling Automation | Save 5+ hours/week per recruiter |
+| High ROI / High Effort | ATS Data Entry Automation | Integrate AI tools for bulk updates |
+| High ROI / Medium Effort | Job Description Generation | AI-powered content creation |
+| Low ROI / Low Effort | Email Campaign Templates | Use AI for templates and copy |
+
+**Quick Win Recommendation:** Candidate Outreach — implementable within week 1.
+
+---
+
+## The Process
+
+| Step | Timeline | Activity |
+|------|----------|----------|
+| 01 | Day 1 | Discovery Call — 30-minute intake |
+| 02 | Day 1–3 | Workflow Analysis — deep audit of processes |
+| 03 | Day 3–4 | AI Opportunity Matrix — mapping opportunities |
+| 04 | Day 4–5 | Tool Recommendations — matching tools to needs |
+| 05 | Day 5–6 | ROI Projections — conservative estimates |
+| 06 | Day 6 | 90-Day Roadmap — implementation plan |
+| 07 | Day 7 | Executive Debrief — presentation and Q&A |
+
+---
+
+## Frequently Asked Questions
+
+**Do you implement the tools?**
+No, we deliver the audit and roadmap. Implementation is your responsibility, but our 90-day roadmap makes it straightforward. We can recommend implementation partners if needed.
+
+**How long does the audit take?**
+Exactly 7 business days from kickoff to final deliverables. The process includes a discovery call, workflow analysis, matrix creation, and executive debrief.
+
+**Is this suitable for boutique agencies?**
+Yes, absolutely. We specialize in firms with 10–50 employees. Our recommendations scale based on your team size and complexity.
+
+**How is sensitive data handled?**
+All data is treated with strict confidentiality. We sign NDAs and use secure, GDPR-compliant processes. Details are never shared or retained longer than necessary.
+
+**What if I'm not satisfied?**
+We stand behind our work. If the audit doesn't meet your expectations, we offer a full revision at no extra cost.
+
+**Can I see a sample report?**
+Yes. Schedule a discovery call and we'll walk you through an anonymized case study showing the format and depth of our deliverables.
+
+---
+
+## Contact
+
+- **Schedule a Discovery Call:** https://calendly.com/auqira
+- **Email:** hello@auqira.com
+- **Website:** https://auqira.com
+
+---
+
+## About the Founder
+
+**Soham Singh** — Founder & AI Advisory Lead at Auqira. Building practical AI advisory services that help service businesses turn AI experimentation into measurable operational outcomes.
+
+---
+
+*Last updated: May 2026*

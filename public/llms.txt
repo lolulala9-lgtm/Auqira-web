@@ -1,0 +1,58 @@
+# Auqira
+
+> Auqira provides fixed-price AI Workflow Audits for recruitment agencies, delivered in 7 business days with ROI projections and a 90-day implementation roadmap.
+
+Auqira helps recruitment agencies discover exactly where AI can save 10–20 hours per recruiter weekly. Founded by Soham Singh, we turn AI experimentation into measurable operational outcomes through structured workflow analysis and executive-level recommendations.
+
+## Service: AI Workflow Audit
+
+- **Price:** $1,500 (founding client rate, normally $3,000)
+- **Delivery:** 7 business days, guaranteed
+- **Format:** Delivered in Google Slides with an executive debrief
+
+The audit includes:
+1. 30-Minute Discovery Call — intake to understand current workflows
+2. Full Workflow Audit & Analysis — deep audit of recruitment processes and pain points
+3. AI Opportunity Matrix — 2×2 matrix mapping opportunities by ROI impact vs implementation effort
+4. Tool & Integration Recommendations — specific AI tools matched to your needs
+5. Conservative ROI Projections — metrics-driven estimates of time saved and revenue potential
+6. 90-Day Implementation Roadmap — step-by-step plan with milestones
+7. Executive Debrief & Q&A — 30-minute presentation of findings
+
+## Target Audience
+
+- Boutique Recruitment Agencies (10–50 headcount, scaling with AI)
+- Executive Search Firms (high-touch processes benefiting from AI-powered research)
+- Specialized Staffing Firms (niche verticals with complex workflows)
+
+## Expected Outcomes
+
+- 10–20 hours saved per recruiter per week
+- $25K–$100K annual productivity potential unlocked
+- 10x+ ROI from one additional placement
+- 7 business days to complete delivery
+
+## Pricing
+
+| Plan | Price | Availability |
+|------|-------|-------------|
+| Complete AI Audit (Founding Rate) | $1,500 | Limited to 3 agencies (50% off normal $3,000 rate) |
+
+## FAQ
+
+- **Do you implement the tools?** No, we deliver the audit and roadmap. Implementation is your responsibility, but our 90-day roadmap makes it straightforward. We can recommend implementation partners if needed.
+- **How long does the audit take?** Exactly 7 business days from kickoff to final deliverables.
+- **Is this suitable for boutique agencies?** Yes, we specialize in firms with 10–50 employees. Our recommendations scale based on your team size and complexity.
+- **How is sensitive data handled?** All data is treated with strict confidentiality. We sign NDAs and use secure, GDPR-compliant processes.
+- **What if I'm not satisfied?** We stand behind our work. If the audit doesn't meet your expectations, we offer a full revision at no extra cost.
+- **Can I see a sample report?** Yes. Schedule a discovery call and we'll walk you through an anonymized case study.
+
+## Contact
+
+- [Schedule a Discovery Call](https://calendly.com/auqira)
+- Email: hello@auqira.com
+- Website: https://auqira.com
+
+## About
+
+Founded by Soham Singh. Auqira builds practical AI advisory services that help service businesses move from AI experimentation to measurable operational outcomes through structured workflow analysis and executive-level recommendations.
