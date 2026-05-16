@@ -1,7 +1,7 @@
 'use client';
 
 import { AnimateOnScroll } from './animate-on-scroll';
-import { Check, BarChart3, TrendingUp, Calendar, FileText, ArrowRight } from 'lucide-react';
+import { Check, BarChart3, TrendingUp, Calendar, ArrowRight } from 'lucide-react';
 
 export function HeroSection() {
   return (
@@ -23,17 +23,17 @@ export function HeroSection() {
             <AnimateOnScroll variant="fadeUp" delay={0.1}>
               <div className="space-y-3">
                 <p className="text-teal font-semibold text-[11px] tracking-widest uppercase">
-                  Executive Advisory
+                  AI Workflow Audit for Recruitment Agencies
                 </p>
-                <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-obsidian leading-tight">
-                  Find Where AI Delivers Real Value.
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-obsidian leading-tight">
+                  Your Recruiters Are Losing 15+ Hours a Week to Tasks AI Can Handle.
                 </h1>
               </div>
             </AnimateOnScroll>
 
             <AnimateOnScroll variant="fadeUp" delay={0.2}>
               <p className="text-lg text-slate-custom leading-relaxed max-w-2xl">
-                A fixed-price, comprehensive AI Workflow Audit designed specifically for recruitment agencies. Delivered in 7 business days with ROI projections, tool recommendations, and a 90-day implementation roadmap.
+                A fixed-scope AI Workflow Audit built exclusively for boutique recruitment agencies. In 7 days, you get a prioritized map of exactly where AI saves your team the most time — with the ROI math, tool names, and a 90-day roadmap to act on it.
               </p>
             </AnimateOnScroll>
 
@@ -48,36 +48,39 @@ export function HeroSection() {
                   Schedule a Discovery Call
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
                 </a>
-                <button className="btn-secondary">
+                <a
+                  href="#sample-audit"
+                  className="btn-secondary inline-flex items-center justify-center"
+                >
                   View Sample Audit
-                </button>
+                </a>
               </div>
             </AnimateOnScroll>
 
-            {/* Key differentiators */}
+            {/* Key differentiators — updated stats */}
             <div className="grid grid-cols-2 gap-6 pt-8">
               <AnimateOnScroll variant="fadeUp" delay={0.4}>
                 <div className="space-y-1">
-                  <p className="text-[11px] uppercase text-teal font-semibold tracking-wider">$1,500</p>
-                  <p className="text-xs text-slate-custom">Founding client rate</p>
+                  <p className="text-[11px] uppercase text-teal font-semibold tracking-wider">15+ hrs/week</p>
+                  <p className="text-xs text-slate-custom">Avg. recruiter time recovered</p>
                 </div>
               </AnimateOnScroll>
               <AnimateOnScroll variant="fadeUp" delay={0.5}>
                 <div className="space-y-1">
                   <p className="text-[11px] uppercase text-teal font-semibold tracking-wider">7 Days</p>
-                  <p className="text-xs text-slate-custom">Delivery guarantee</p>
+                  <p className="text-xs text-slate-custom">Guaranteed delivery from discovery call</p>
                 </div>
               </AnimateOnScroll>
               <AnimateOnScroll variant="fadeUp" delay={0.6}>
                 <div className="space-y-1">
-                  <p className="text-[11px] uppercase text-teal font-semibold tracking-wider">ROI-Focused</p>
-                  <p className="text-xs text-slate-custom">Metrics-driven recommendations</p>
+                  <p className="text-[11px] uppercase text-teal font-semibold tracking-wider">$1,500</p>
+                  <p className="text-xs text-slate-custom">Founding client rate — normally $3,000</p>
                 </div>
               </AnimateOnScroll>
               <AnimateOnScroll variant="fadeUp" delay={0.7}>
                 <div className="space-y-1">
-                  <p className="text-[11px] uppercase text-teal font-semibold tracking-wider">Expert-Led</p>
-                  <p className="text-xs text-slate-custom">Founder consultation included</p>
+                  <p className="text-[11px] uppercase text-teal font-semibold tracking-wider">10x ROI</p>
+                  <p className="text-xs text-slate-custom">From a single additional placement</p>
                 </div>
               </AnimateOnScroll>
             </div>
@@ -138,7 +141,10 @@ export function HeroSection() {
                     </div>
                     <div className="flex justify-between mt-1.5">
                       <p className="text-[9px] text-slate-custom">Month 1</p>
-                      <p className="text-[9px] text-teal font-semibold">+$85K projected</p>
+                      <div className="text-right">
+                        <p className="text-[9px] text-teal font-semibold">+$42K–$85K/yr</p>
+                        <p className="text-[8px] text-slate-custom">Based on 3 recruiters, avg. $55K salary</p>
+                      </div>
                     </div>
                   </div>
 

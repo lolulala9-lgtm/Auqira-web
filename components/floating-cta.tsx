@@ -28,11 +28,7 @@ export function FloatingCTA() {
           transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1.0] }}
           className="fixed bottom-6 right-6 z-50 flex items-center gap-2.5 px-5 py-3 bg-teal text-ivory rounded-full shadow-lg hover:shadow-xl hover:bg-[#0a4a51] transition-all duration-300 group"
         >
-          <span className="relative flex h-2.5 w-2.5">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-300 opacity-75" />
-            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-400" />
-          </span>
-          <span className="text-xs font-semibold uppercase tracking-wider">3 Spots Left</span>
+          <span className="text-xs font-semibold uppercase tracking-wider">Book Your Audit</span>
           <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
         </motion.a>
       )}

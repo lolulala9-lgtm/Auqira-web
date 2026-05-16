@@ -1,6 +1,6 @@
 'use client';
 
-import { Check } from 'lucide-react';
+import { Check, ShieldCheck } from 'lucide-react';
 import { AnimateOnScroll } from './animate-on-scroll';
 
 export function PricingSection() {
@@ -32,35 +32,35 @@ export function PricingSection() {
                   <span className="text-7xl font-bold text-obsidian">$1,500</span>
                   <p className="text-slate-custom text-sm line-through">Normally $3,000</p>
                 </div>
-                <p className="text-teal font-bold text-sm">50% off for first 3 agencies</p>
-              </div>
-
-              {/* Spots remaining indicator */}
-              <div className="flex items-center justify-center gap-3">
-                <div className="flex gap-1.5">
-                  <div className="w-3 h-3 rounded-full bg-teal" />
-                  <div className="w-3 h-3 rounded-full bg-teal" />
-                  <div className="w-3 h-3 rounded-full bg-gray-200 border border-gray-300" />
-                </div>
-                <p className="text-xs text-slate-custom font-semibold">2 of 3 spots taken</p>
+                <p className="text-teal font-bold text-sm">Founding client rate available for 3 agencies only.</p>
               </div>
 
               <div className="space-y-3 border-y border-border-custom py-8">
                 {[
                   'Full Workflow Audit & Analysis',
-                  '30-Minute Discovery Call',
+                  '60-Minute Deep-Dive Discovery Call',
                   'AI Opportunity Matrix',
                   'Tool & Integration Recommendations',
-                  'Conservative ROI Projections',
+                  'Conservative ROI Projections — with visible math, not just numbers',
                   '90-Day Implementation Roadmap',
                   'Executive Debrief & Q&A',
-                  'Delivered in Google Slides',
+                  'ATS Integration Compatibility Check (Bullhorn, Greenhouse, Lever, JobAdder, Vincere, Loxo + more)',
+                  'Shareable Presentation Deck (present to your partners in 60 seconds)',
                 ].map((feature, idx) => (
                   <div key={idx} className="flex gap-3">
                     <Check className="w-5 h-5 text-teal flex-shrink-0 mt-0.5" />
                     <p className="text-slate-custom font-medium text-sm">{feature}</p>
                   </div>
                 ))}
+              </div>
+
+              {/* Risk reversal box */}
+              <div className="rounded-xl border border-teal/30 bg-teal/5 p-5 flex gap-3">
+                <ShieldCheck className="w-5 h-5 text-teal flex-shrink-0 mt-0.5" />
+                <p className="text-sm text-slate-custom leading-relaxed">
+                  <span className="font-semibold text-obsidian">Risk-Free Guarantee:</span>{' '}
+                  If the audit doesn&apos;t surface at least 5 specific, actionable AI opportunities for your agency, I&apos;ll refund your fee in full. No questions asked.
+                </p>
               </div>
 
               <a
