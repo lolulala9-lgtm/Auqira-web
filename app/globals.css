@@ -132,6 +132,10 @@
   }
   body {
     @apply bg-background text-foreground;
+    line-height: 1.65;
+  }
+  h1, h2 {
+    letter-spacing: -0.03em;
   }
 }
 
@@ -195,4 +199,29 @@
   .btn-secondary {
     @apply px-6 py-3 border-2 border-obsidian text-obsidian rounded-full font-semibold hover:bg-obsidian hover:text-ivory transition-all duration-300;
   }
+  
+  .uppercase-label {
+    letter-spacing: 0.12em;
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+  
+  .marquee-track {
+    animation: marquee 30s linear infinite;
+  }
+  .marquee-track:hover {
+    animation-play-state: paused;
+  }
+  
+  .marquee-track-slow {
+    animation: marquee 40s linear infinite;
+  }
+  .marquee-track-slow:hover {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }

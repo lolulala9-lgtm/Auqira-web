@@ -41,7 +41,7 @@ export function ROICalculator() {
           <p className="text-teal font-semibold text-[11px] tracking-widest uppercase mb-3">
             ROI Calculator
           </p>
-          <h2 className="text-5xl lg:text-6xl font-bold text-ivory leading-tight mb-4">
+          <h2 className="text-[2.5rem] lg:text-[4rem] font-bold text-ivory leading-[1.1] tracking-[-0.02em] mb-4">
             See Your Numbers
           </h2>
           <p className="text-lg text-ivory/70 max-w-2xl mx-auto">

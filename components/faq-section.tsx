@@ -55,10 +55,10 @@ export function FAQSection() {
     <section id="faq" className="bg-ivory py-28 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         <AnimateOnScroll variant="fadeUp" delay={0.1} className="mb-16">
-          <p className="text-teal font-semibold text-[11px] tracking-widest uppercase mb-3">
+          <p className="uppercase-label text-teal font-semibold mb-3">
             Questions
           </p>
-          <h2 className="text-5xl lg:text-6xl font-bold text-obsidian mb-4 leading-tight">
+          <h2 className="text-[2.5rem] lg:text-[4rem] font-bold text-obsidian mb-4 leading-[1.1] tracking-[-0.02em]">
             Frequently Asked.
           </h2>
         </AnimateOnScroll>

@@ -81,7 +81,7 @@ export function ComparisonTable() {
           <p className="text-teal font-semibold text-[11px] tracking-widest uppercase mb-3">
             Comparison
           </p>
-          <h2 className="text-5xl lg:text-6xl font-bold text-obsidian leading-tight">
+          <h2 className="text-[2.5rem] lg:text-[4rem] font-bold text-obsidian leading-[1.1] tracking-[-0.02em]">
             Why Not Just Figure It Out Yourself?
           </h2>
         </AnimateOnScroll>
