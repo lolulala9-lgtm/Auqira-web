@@ -4,6 +4,7 @@ import { StatsTicker } from '@/components/stats-ticker';
 import { ATSLogoWall } from '@/components/ats-logo-wall';
 import { ProblemSection } from '@/components/problem-section';
 import { BentoGrid } from '@/components/bento-grid';
+import { IndustriesSection } from '@/components/industries-section';
 import { DataWall } from '@/components/data-wall';
 import { ROICalculator } from '@/components/roi-calculator';
 import { ComparisonTable } from '@/components/comparison-table';
@@ -26,6 +27,7 @@ export default function Home() {
         <HeroSection />
         <StatsTicker />
         <ATSLogoWall />
+        <IndustriesSection />
 
         {/* IVORY ZONE: Content sections */}
         <ProblemSection />

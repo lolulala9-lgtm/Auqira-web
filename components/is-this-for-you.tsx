@@ -4,20 +4,20 @@ import { AnimateOnScroll } from './animate-on-scroll';
 import { Check, X } from 'lucide-react';
 
 const forYou = [
-  'You run a boutique recruitment agency with 10–50 internal staff',
-  'Your team uses AI tools individually but has no unified strategy',
-  'You\u0027re losing candidates to faster competitors',
-  'You want specific tool recommendations, not generic advice',
-  'You\u0027re targeting US, UK, Canadian, or Australian clients',
-  'You make decisions yourself — no six-month committee approval process',
+  'You run a service business with 5–100 employees',
+  'Your team uses AI tools individually with no unified strategy',
+  'You\'re spending hours on tasks that feel repetitive and manual',
+  'You want specific tool recommendations that fit your existing stack',
+  'You\'re in the US, UK, Canada, or Australia',
+  'You\'re the founder or ops leader — you can make decisions without a committee',
 ];
 
 const notForYou = [
-  'You\u0027re a solo recruiter or freelance headhunter (minimum team of 5)',
-  'You want us to build or implement the tools for you',
-  'You\u0027re looking for a guarantee that AI will fix a broken sales process',
-  'You\u0027re an internal corporate HR team (we work with agencies only)',
-  'You need a decision in 6+ months (this moves fast)',
+  'You want someone to build or implement the tools for you (we advise, you execute)',
+  'You\'re looking for a guarantee that AI fixes a broken sales or service process',
+  'You need a six-month procurement process to approve a $1,500 purchase',
+  'You have a dedicated internal AI team already doing this work',
+  'You\'re an individual freelancer (minimum team size: 5)',
 ];
 
 export function IsThisForYou() {
@@ -29,7 +29,7 @@ export function IsThisForYou() {
             Ideal Client
           </p>
           <h2 className="text-[2.5rem] lg:text-[4rem] font-bold text-obsidian leading-[1.1] tracking-[-0.02em]">
-            Built for One Type of Agency
+            Built for Service Businesses
           </h2>
         </AnimateOnScroll>
 

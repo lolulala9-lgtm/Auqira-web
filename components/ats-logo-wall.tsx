@@ -2,10 +2,11 @@
 
 export function ATSLogoWall() {
   const tools = [
-    'Bullhorn', 'Greenhouse', 'Lever', 'JobAdder', 'Vincere',
-    'Loxo', 'Workable', 'SmartRecruiters', 'Avionté', 'JazzHR',
-    'Zoho Recruit', 'Recruitee', 'Gem', 'HireEZ', 'LinkedIn Recruiter',
-    'Zapier', 'Make', 'Calendly', 'HubSpot', 'Slack',
+    'Bullhorn', 'Greenhouse', 'Lever', 'JobAdder', 'Vincere', 'Loxo', 'Workable', 'SmartRecruiters', 'HireEZ', 'Gem',
+    'Follow Up Boss', 'CINC', 'Sierra Interactive', 'Chime', 'LionDesk', 'KvCORE',
+    'HubSpot', 'Supermetrics', 'Looker Studio', 'Monday.com', 'Asana', 'Notion', 'Canva',
+    'Shopify', 'Gorgias', 'Klaviyo', 'Triple Whale', 'Yotpo', 'Google Analytics',
+    'Muckrack', 'Cision', 'Prowly', 'Slack'
   ];
 
   const loopTools = [...tools, ...tools, ...tools];
@@ -14,7 +15,7 @@ export function ATSLogoWall() {
     <section className="relative w-full overflow-hidden" style={{ backgroundColor: '#0D0F14' }}>
       <div className="py-10">
         <p className="text-center text-sm font-medium text-[#A1A1AA] mb-8 tracking-wide">
-          Compatible with your existing stack
+          Works with the tools your team already uses
         </p>
 
         <div className="overflow-hidden">

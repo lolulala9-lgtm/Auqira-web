@@ -206,8 +206,16 @@
     text-transform: uppercase;
   }
   
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
   .marquee-track {
-    animation: marquee 30s linear infinite;
+    animation: marquee 60s linear infinite;
   }
   .marquee-track:hover {
     animation-play-state: paused;

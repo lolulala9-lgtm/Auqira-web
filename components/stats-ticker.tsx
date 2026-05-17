@@ -3,12 +3,16 @@
 export function StatsTicker() {
   const stats = [
     '60–70% of recruiter time is spent on tasks AI can automate — LinkedIn Workforce Report',
+    'Real estate agents spend 30–45 min writing each listing description — AI gets it to 8 minutes',
     '17 hours saved per recruiter per week with structured AI workflows — McKinsey',
+    'Marketing agencies waste 4 hrs/week per person on manual client reporting',
     '50% reduction in time-to-fill at AI-adopting agencies — Aptitude Research 2024',
+    'E-commerce brands see 40% customer service ticket deflection with AI implementation',
     '73% of AI pilots fail without a structured implementation plan — Gartner',
-    'Agencies using AI sourcing see 2.3× more qualified applications per role',
-    'Average boutique agency recovers $40,000+ per recruiter annually with the right AI stack',
-    '$1,500 audit · 7-day delivery · vendor-agnostic · ATS-compatible',
+    'PR teams write 30+ personalized media pitches per campaign — AI trims this to 4 min each',
+    'Agencies using AI workflows report 30–50% faster proposal turnaround',
+    'Average boutique agency recovers $40,000+ per employee annually with the right AI stack',
+    '$1,500 audit · 7-day delivery · vendor-agnostic · compatible with 20+ tools',
   ];
 
   const loopItems = [...stats, ...stats];

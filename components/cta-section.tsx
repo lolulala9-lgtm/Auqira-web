@@ -34,19 +34,19 @@ export function CTASection() {
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <AnimateOnScroll variant="fadeUp" delay={0.1}>
           <p className="uppercase-label text-teal font-semibold mb-8">
-            3 Founding Client Spots
+            5 Industries. One Audit. 7 Days.
           </p>
         </AnimateOnScroll>
 
         <AnimateOnScroll variant="fadeUp" delay={0.2}>
           <h2 className="text-[2.5rem] lg:text-[4rem] font-bold text-white leading-[1.1] tracking-[-0.02em] mb-6 text-balance">
-            The agencies that figure out AI first will be impossible to compete with.
+            The businesses that figure out AI first will be impossible to compete with.
           </h2>
         </AnimateOnScroll>
 
         <AnimateOnScroll variant="fadeUp" delay={0.3}>
           <p className="text-lg text-[#A1A1AA] mb-10 max-w-2xl mx-auto leading-relaxed">
-            Get the audit that tells you exactly where to start. Fixed price. 7 days. No fluff.
+            Whether you're placing candidates, selling properties, running campaigns, shipping products, or pitching journalists — the workflows are different. The opportunity is the same.
           </p>
         </AnimateOnScroll>
 

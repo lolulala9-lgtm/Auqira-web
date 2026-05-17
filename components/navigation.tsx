@@ -7,6 +7,7 @@ import Link from 'next/link';
 
 const navLinks = [
   { label: 'The Audit', target: 'audit' },
+  { label: 'Industries', target: 'industries' },
   { label: 'Pricing', target: 'pricing' },
   { label: 'FAQ', target: 'faq' },
 ];

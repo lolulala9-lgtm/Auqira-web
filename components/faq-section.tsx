@@ -7,6 +7,16 @@ import { AnimateOnScroll } from './animate-on-scroll';
 
 const faqs = [
   {
+    question: 'Do you work with industries other than recruitment?',
+    answer:
+      'Yes — the audit is built for any service business with document-heavy, repetitive workflows. We currently work with recruitment agencies, real estate brokerages, marketing agencies, e-commerce brands, and PR firms. If your team spends significant time on tasks that follow a repeatable pattern, there\'s almost certainly an AI opportunity worth auditing.',
+  },
+  {
+    question: 'Is the audit the same across industries?',
+    answer:
+      'The methodology is the same. The content is entirely different. Every audit is built from your specific discovery call — your tools, your workflows, your team structure. We don\'t have an off-the-shelf report. What you receive reflects your agency, not a template.',
+  },
+  {
     question: 'Will this disrupt our recruiters\u0027 daily workflow?',
     answer:
       'No. The entire audit requires only one 60-minute call with you — the founder or ops lead. Your recruiters don\u0027t attend. I work from your intake form and our discovery call. They won\u0027t notice the audit is happening.',
