@@ -35,7 +35,7 @@ export function IsThisForYou() {
 
         <AnimateOnScroll variant="fadeUp" delay={0.15} className="mb-14">
           <p className="text-lg text-slate-custom max-w-2xl">
-            We work with a very specific client. Here&apos;s how to know if that&apos;s you.
+            I work with a very specific client. Here&apos;s how to know if that&apos;s you.
           </p>
         </AnimateOnScroll>
 

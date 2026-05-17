@@ -9,52 +9,42 @@ const faqs = [
   {
     question: 'Do you work with industries other than recruitment?',
     answer:
-      'Yes — the audit is built for any service business with document-heavy, repetitive workflows. We currently work with recruitment agencies, real estate brokerages, marketing agencies, e-commerce brands, and PR firms. If your team spends significant time on tasks that follow a repeatable pattern, there\'s almost certainly an AI opportunity worth auditing.',
+      "Yes — the audit is built for any service business with document-heavy, repetitive workflows. I currently work with recruitment agencies, real estate brokerages, and marketing agencies. If your team spends significant time on tasks that follow a repeatable pattern, there's almost certainly an AI opportunity worth auditing.",
   },
   {
     question: 'Is the audit the same across industries?',
     answer:
-      'The methodology is the same. The content is entirely different. Every audit is built from your specific discovery call — your tools, your workflows, your team structure. We don\'t have an off-the-shelf report. What you receive reflects your agency, not a template.',
+      "The methodology is the same. The content is entirely different. Every audit is built from your specific discovery call — your tools, your workflows, your team structure. I don't have an off-the-shelf report. What you receive reflects your business, not a template.",
   },
   {
-    question: 'Will this disrupt our recruiters\u0027 daily workflow?',
+    question: 'Will this disrupt my team\'s daily workflow?',
     answer:
-      'No. The entire audit requires only one 60-minute call with you — the founder or ops lead. Your recruiters don\u0027t attend. I work from your intake form and our discovery call. They won\u0027t notice the audit is happening.',
+      "No. The entire audit requires only one 60-minute call with you — the founder or ops lead. Your team doesn't attend. I work from your intake form and our discovery call. They won't notice the audit is happening.",
   },
   {
-    question: 'We already use ChatGPT. Isn\u0027t that enough?',
+    question: 'We already use ChatGPT. Isn\'t that enough?',
     answer:
-      'ChatGPT is a good starting point for writing job descriptions or emails. The audit focuses on agentic AI — systems that autonomously source candidates, auto-fill your ATS, schedule interviews, and follow up with leads without requiring a recruiter to prompt them each time. That\u0027s where the 15+ hours per week of recovery comes from.',
+      "ChatGPT is a good starting point for writing copy or drafting emails. The audit focuses on agentic AI — systems that autonomously handle repetitive tasks, integrate with your existing tools, and run without someone prompting them each time. That's where the 10+ hours per week of recovery comes from.",
   },
   {
-    question: 'What if our candidate data is confidential?',
+    question: 'What if our client or business data is confidential?',
     answer:
-      'All recommended tools are enterprise-grade and do not use your proprietary candidate or client data to train public AI models. A core output of the audit is flagging any tools in your current stack with weak data governance, and replacing them with privacy-compliant alternatives.',
-  },
-  {
-    question: 'What about AI bias in hiring?',
-    answer:
-      'AI bias is a real legal risk, and the audit addresses it directly. Every tool recommendation includes a bias compliance review. I flag vendors with poor audit trails and only recommend tools aligned with emerging EU AI Act and US state-level hiring fairness standards.',
+      "All recommended tools are enterprise-grade and do not use your proprietary data to train public AI models. A core output of the audit is flagging any tools in your current stack with weak data governance, and replacing them with privacy-compliant alternatives.",
   },
   {
     question: 'How is this different from a software vendor pitching me AI?',
     answer:
-      'I don\u0027t sell software. I don\u0027t have affiliate deals or vendor commissions. I\u0027m entirely vendor-agnostic — my only incentive is finding the highest-ROI solution for your specific agency and ATS stack. If the best tool for your situation is free, I\u0027ll tell you that.',
+      "I don't sell software. I don't have affiliate deals or vendor commissions. I'm entirely vendor-agnostic — my only incentive is finding the highest-ROI solution for your specific business and tech stack. If the best tool for your situation is free, I'll tell you that.",
   },
   {
-    question: 'What if I\u0027m not happy with the audit?',
+    question: 'What if I\'m not happy with the audit?',
     answer:
-      'If the audit doesn\u0027t surface at least 5 specific, actionable AI opportunities tailored to your agency\u0027s workflows, I\u0027ll refund your fee in full. That guarantee has never been triggered — there are always more opportunities than expected.',
+      "If the audit doesn't surface at least 5 specific, actionable AI opportunities tailored to your workflows, I'll refund your fee in full. That guarantee has never been triggered — there are always more opportunities than expected.",
   },
   {
-    question: 'We\u0027re in a hiring freeze. Is now the right time?',
+    question: 'How do I know your recommendations will work with our existing tools?',
     answer:
-      'Hiring freezes are the best time to do this. When headcount is locked, the only path to more revenue is improving output per recruiter. The audit gives you the blueprint to do that — so when the freeze lifts, your team operates at 40–50% higher efficiency from day one.',
-  },
-  {
-    question: 'How do I know your recommendations will work with our ATS?',
-    answer:
-      'We\u0027ve worked with agencies using Bullhorn, Greenhouse, Lever, JobAdder, Vincere, Loxo, Workable, SmartRecruiters, and more. Every tool recommendation in the report is cross-checked against your specific ATS for native integration or API compatibility before it goes in the deck.',
+      "I've worked with businesses across multiple tech stacks — CRMs, ATSs, CMSs, e-commerce platforms, and marketing suites. Every tool recommendation in the report is cross-checked against your specific stack for native integration or API compatibility before it goes in the deck.",
   },
 ];
 
@@ -65,9 +55,7 @@ export function FAQSection() {
     <section id="faq" className="bg-ivory py-28 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         <AnimateOnScroll variant="fadeUp" delay={0.1} className="mb-16">
-          <p className="uppercase-label text-teal font-semibold mb-3">
-            Questions
-          </p>
+          <p className="uppercase-label text-teal font-semibold mb-3">Questions</p>
           <h2 className="text-[2.5rem] lg:text-[4rem] font-bold text-obsidian mb-4 leading-[1.1] tracking-[-0.02em]">
             Frequently Asked.
           </h2>
@@ -81,11 +69,13 @@ export function FAQSection() {
 
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <AnimateOnScroll key={index} variant="fadeUp" delay={0.3 + index * 0.08}>
+            <AnimateOnScroll key={index} variant="fadeUp" delay={0.3 + index * 0.05}>
               <div className="overflow-hidden rounded-xl border border-gray-200 hover:border-teal/30 transition-colors duration-300">
                 <button
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
                   className="w-full text-left px-6 py-5 bg-ivory flex items-center justify-between group"
+                  aria-expanded={openIndex === index}
+                  aria-controls={`faq-answer-${index}`}
                 >
                   <span className="font-semibold text-obsidian pr-4 group-hover:text-teal transition-colors">
                     {faq.question}
@@ -103,6 +93,7 @@ export function FAQSection() {
                 <AnimatePresence initial={false}>
                   {openIndex === index && (
                     <motion.div
+                      id={`faq-answer-${index}`}
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: 'auto', opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}

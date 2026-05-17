@@ -15,15 +15,15 @@ const cards = [
     type: 'quote' as const,
     theme: 'light' as const,
     quote:
-      'The average recruiter spends 60–70% of their day on administrative tasks that have no direct impact on placements. AI is not a threat to recruiters — it\'s the only way to give them their week back.',
-    attribution: 'LinkedIn Workforce Report, 2024',
+      'The average service business employee spends 40-60% of their day on administrative tasks that have no direct impact on revenue. AI is not a threat to your team — it\'s the only way to give them their week back.',
+    attribution: 'McKinsey Global Institute, 2024',
   },
   {
     type: 'stat' as const,
     theme: 'teal' as const,
-    stat: '17 hours',
+    stat: '10+ hrs',
     subtext:
-      'Recovered per recruiter per week when AI workflows are implemented with a structured approach.',
+      'Recovered per team member per week when AI workflows are implemented with a structured approach — conservative cross-industry estimate.',
     attribution: 'McKinsey Global Institute',
   },
   {

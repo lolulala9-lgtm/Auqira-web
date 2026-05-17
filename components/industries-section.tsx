@@ -22,7 +22,7 @@ const industriesData = [
       { icon: <Mail className="w-4 h-4 text-teal shrink-0 mt-0.5" />, text: 'Candidate re-engagement — manual follow-ups that get deprioritized' },
       { icon: <BarChart2 className="w-4 h-4 text-teal shrink-0 mt-0.5" />, text: 'Client reporting — manually compiled status updates each week' },
     ],
-    roi: { title: 'The math your partners need to see', content: '3 recruiters \u00d7 17 hrs recovered/week \u00d7 $40 loaded hourly rate \u00d7 52 weeks\n= $106,080 in recovered capacity per year\nYour audit investment: $1,500\nPayback period: 6 working days' },
+    roi: { title: 'The math your partners need to see', content: '5 team members \u00d7 12 hrs recovered/week \u00d7 $40 loaded hourly rate \u00d7 52 weeks\n= $124,800 in recovered capacity per year\nYour audit investment: $1,500\nPayback period: 4.4 working days' },
     tools: ['Bullhorn AI', 'Greenhouse', 'Paradox (Olivia)', 'HireEZ', 'Gem', 'Fathom', 'Calendly AI', 'Zapier', 'Make', 'Loxo'],
     toolsNote: 'Every recommendation is cross-checked against your specific ATS before it goes in the deck.',
     callout: 'One additional placement per quarter covers the cost of this audit more than 10x. Most businesses find 6-8 improvement opportunities in the first audit.',

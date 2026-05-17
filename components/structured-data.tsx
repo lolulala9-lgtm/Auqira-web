@@ -5,7 +5,7 @@ export default function StructuredDataScript() {
     name: 'Auqira',
     url: 'https://auqira.com',
     logo: 'https://auqira.com/icon.svg',
-    description: 'Executive AI advisory for recruitment agencies. Fixed-price AI workflow audits delivered in 7 business days.',
+    description: 'Fixed-price AI Workflow Audits for Real Estate, Marketing, and Recruitment businesses. Delivered in 7 business days with ROI projections, tool recommendations, and a 90-day implementation roadmap.',
     founder: {
       '@type': 'Person',
       name: 'Soham Singh',
@@ -30,7 +30,7 @@ export default function StructuredDataScript() {
       '@type': 'Organization',
       name: 'Auqira',
     },
-    description: 'A comprehensive, fixed-price AI Workflow Audit designed specifically for recruitment agencies. Includes AI Opportunity Matrix, tool recommendations, ROI projections, and a 90-day implementation roadmap.',
+    description: 'A comprehensive, fixed-price AI Workflow Audit for service businesses in recruitment, real estate, and marketing. Includes an AI Opportunity Matrix, tool recommendations, conservative ROI projections, and a 90-day implementation roadmap. Delivered in 7 business days.',
     serviceType: 'AI Consulting',
     areaServed: {
       '@type': 'Place',
@@ -43,7 +43,7 @@ export default function StructuredDataScript() {
       priceCurrency: 'USD',
       priceValidUntil: '2026-12-31',
       availability: 'https://schema.org/LimitedAvailability',
-      description: '50% off founding client rate. Limited to 3 agencies. Normally $3,000.',
+      description: 'Founding client rate — 3 spots only in exchange for a testimonial. Normally $3,000.',
       url: 'https://calendly.com/auqira',
     },
     hasOfferCatalog: {
@@ -51,7 +51,7 @@ export default function StructuredDataScript() {
       name: 'AI Audit Deliverables',
       itemListElement: [
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Full Workflow Audit & Analysis' } },
-        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: '30-Minute Discovery Call' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: '60-Minute Deep-Dive Discovery Call' } },
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'AI Opportunity Matrix' } },
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Tool & Integration Recommendations' } },
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Conservative ROI Projections' } },
@@ -67,42 +67,42 @@ export default function StructuredDataScript() {
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'Do you implement the tools?',
+        name: 'What industries does Auqira work with?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'No, we deliver the audit and roadmap. Implementation is your responsibility, but our 90-day roadmap makes it straightforward. We can recommend implementation partners if needed.',
+          text: 'Auqira works with service businesses in recruitment & staffing, real estate, and marketing & creative agencies. Any business with repetitive, document-heavy workflows is a strong candidate for an AI Workflow Audit.',
         },
       },
       {
         '@type': 'Question',
-        name: 'How long does the audit take?',
+        name: 'How long does the AI Workflow Audit take?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Exactly 7 business days from kickoff to final deliverables. The process includes a discovery call, workflow analysis, matrix creation, and executive debrief.',
+          text: 'Exactly 7 business days from the discovery call to final deliverables. The process includes workflow analysis, opportunity scoring, tool recommendations, ROI projections, and an executive debrief call.',
         },
       },
       {
         '@type': 'Question',
-        name: 'Is this suitable for boutique agencies?',
+        name: 'Is the audit the same across all industries?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes, absolutely. We specialize in firms with 10–50 employees. Our recommendations scale based on your team size and complexity.',
+          text: 'The methodology is the same. The content is entirely different. Every audit is built from your specific discovery call — your tools, your workflows, your team structure. There is no off-the-shelf report.',
         },
       },
       {
         '@type': 'Question',
-        name: 'How is sensitive data handled?',
+        name: 'What if my business data is confidential?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'All data is treated with strict confidentiality. We sign NDAs and use secure, GDPR-compliant processes. Details are never shared or retained longer than necessary.',
+          text: 'All recommended tools are enterprise-grade and do not use your proprietary data to train public AI models. A core output of the audit is flagging tools in your current stack with weak data governance.',
         },
       },
       {
         '@type': 'Question',
-        name: 'What if I\'m not satisfied?',
+        name: 'What is the guarantee?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'We stand behind our work. If the audit doesn\'t meet your expectations, we offer a full revision at no extra cost.',
+          text: "If the audit doesn't surface at least 5 specific, actionable AI opportunities tailored to your workflows, I'll refund your fee in full. No questions asked.",
         },
       },
       {
@@ -110,7 +110,7 @@ export default function StructuredDataScript() {
         name: 'Can I see a sample report?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes. Schedule a discovery call and we\'ll walk you through an anonymized case study showing the format and depth of our deliverables.',
+          text: 'Yes. Email hello@auqira.com with the subject "Sample Report Request" and I\'ll send one across.',
         },
       },
     ],
@@ -119,8 +119,8 @@ export default function StructuredDataScript() {
   const webpageSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
-    name: 'Auqira | AI Workflow Audit for Recruitment Agencies',
-    description: 'Discover exactly where AI can save your recruitment agency 10–20 hours per recruiter weekly.',
+    name: 'Auqira | AI Workflow Audit — Fixed Price, 7 Days',
+    description: 'Find exactly where AI saves your team the most time. A fixed-scope AI Workflow Audit for service businesses — delivered in 7 days with ROI projections, tool recommendations, and a 90-day implementation roadmap.',
     url: 'https://auqira.com',
     isPartOf: {
       '@type': 'WebSite',
@@ -129,12 +129,29 @@ export default function StructuredDataScript() {
     },
     about: {
       '@type': 'Thing',
-      name: 'AI Workflow Automation for Recruitment',
+      name: 'AI Workflow Automation for Service Businesses',
     },
     mainEntity: {
       '@type': 'Service',
       name: 'AI Workflow Audit',
     },
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['h1', 'h2', '.uppercase-label'],
+    },
+  };
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://auqira.com',
+      },
+    ],
   };
 
   return (
@@ -154,6 +171,10 @@ export default function StructuredDataScript() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
     </>
   );
