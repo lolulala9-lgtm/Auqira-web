@@ -117,7 +117,7 @@ export function ExitIntentModal() {
                     Not ready to book yet?
                   </h3>
                   <p className="text-slate-custom text-sm leading-relaxed">
-                    Get the free <span className="font-semibold text-obsidian">5-Point AI Readiness Checklist</span> for Recruitment Agencies — the exact framework we use to identify AI opportunities in the first 20 minutes of every audit.
+                    Get the free <span className="font-semibold text-obsidian">5-Point AI Readiness Checklist</span> for Service Businesses — the exact framework I use to identify AI opportunities in the first 20 minutes of every audit.
                   </p>
                 </div>
 
@@ -152,7 +152,7 @@ export function ExitIntentModal() {
                 </div>
                 <h3 className="text-xl font-bold text-obsidian">Check your inbox</h3>
                 <p className="text-slate-custom text-sm">
-                  We&apos;ll send the AI Readiness Checklist shortly.
+                  I&apos;ll send the AI Readiness Checklist shortly.
                 </p>
               </div>
             )}

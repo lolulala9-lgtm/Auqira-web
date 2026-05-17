@@ -2,20 +2,18 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import { AnimateOnScroll } from './animate-on-scroll';
-import { ArrowRight, Target, Home, Megaphone, ShoppingBag, Newspaper } from 'lucide-react';
+import { ArrowRight, Target, Home, Megaphone } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const industries = [
   { id: 'recruitment', icon: <Target className="w-3.5 h-3.5" />, label: 'Recruitment' },
   { id: 'real-estate', icon: <Home className="w-3.5 h-3.5" />, label: 'Real Estate' },
   { id: 'marketing', icon: <Megaphone className="w-3.5 h-3.5" />, label: 'Marketing' },
-  { id: 'ecommerce', icon: <ShoppingBag className="w-3.5 h-3.5" />, label: 'E-commerce' },
-  { id: 'pr', icon: <Newspaper className="w-3.5 h-3.5" />, label: 'PR & Comms' },
 ];
 
 const industryStats: Record<string, { stat1: [string, string], stat2: [string, string], stat3: [string, string], stat4: [string, string] }> = {
   'recruitment': {
-    stat1: ["17 hrs/week", "Recovered per recruiter with AI workflows"],
+    stat1: ["10+ hrs/week", "Recovered per person, conservative cross-industry estimate"],
     stat2: ["7 Days", "Guaranteed delivery from discovery call"],
     stat3: ["$1,500", "Founding client rate — normally $3,000"],
     stat4: ["10× ROI", "From a single additional placement"],
@@ -31,18 +29,6 @@ const industryStats: Record<string, { stat1: [string, string], stat2: [string, s
     stat2: ["7 Days", "Guaranteed delivery from discovery call"],
     stat3: ["$1,500", "Founding client rate — normally $3,000"],
     stat4: ["75%", "Reduction in client reporting time with automation"],
-  },
-  'ecommerce': {
-    stat1: ["54 hrs", "Recovered per full catalogue refresh"],
-    stat2: ["7 Days", "Guaranteed delivery from discovery call"],
-    stat3: ["$1,500", "Founding client rate — normally $3,000"],
-    stat4: ["40%", "Customer service ticket deflection rate with AI"],
-  },
-  'pr': {
-    stat1: ["9 hrs", "Recovered per media outreach campaign"],
-    stat2: ["7 Days", "Guaranteed delivery from discovery call"],
-    stat3: ["$1,500", "Founding client rate — normally $3,000"],
-    stat4: ["5×", "More personalized pitches per hour with AI assistance"],
   },
 };
 
@@ -173,10 +159,10 @@ export function HeroSection() {
               <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
             </a>
             <a
-              href="#sample-audit"
+              href="mailto:hello@auqira.com?subject=Sample%20Report%20Request%20%E2%80%94%20%5Byour%20industry%5D"
               className="inline-flex items-center justify-center px-8 py-4 border border-white/20 text-white rounded-full font-semibold hover:bg-white/5 transition-all duration-300 text-base"
             >
-              View Sample Report
+              Request Sample Report
             </a>
           </div>
         </AnimateOnScroll>

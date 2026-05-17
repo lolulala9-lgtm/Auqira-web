@@ -45,7 +45,7 @@ export function ROICalculator() {
             See Your Numbers
           </h2>
           <p className="text-lg text-ivory/70 max-w-2xl mx-auto">
-            How much is recruiter admin time actually costing you?
+            How much is manual admin time actually costing your team?
           </p>
         </AnimateOnScroll>
 
@@ -56,7 +56,7 @@ export function ROICalculator() {
               {/* Number of recruiters */}
               <div className="space-y-3">
                 <div className="flex justify-between items-baseline">
-                  <label className="text-ivory/80 text-sm font-medium">Number of Recruiters</label>
+                  <label className="text-ivory/80 text-sm font-medium">Number of Team Members</label>
                   <span className="text-teal font-bold text-lg">{recruiters}</span>
                 </div>
                 <input
@@ -75,7 +75,7 @@ export function ROICalculator() {
 
               {/* Average salary */}
               <div className="space-y-3">
-                <label className="text-ivory/80 text-sm font-medium block">Average Annual Recruiter Salary (USD)</label>
+                <label className="text-ivory/80 text-sm font-medium block">Average Annual Team Member Salary (USD)</label>
                 <div className="grid grid-cols-4 gap-2">
                   {salaryOptions.map((opt) => (
                     <button
@@ -96,7 +96,7 @@ export function ROICalculator() {
               {/* Hours lost per week */}
               <div className="space-y-3">
                 <div className="flex justify-between items-baseline">
-                  <label className="text-ivory/80 text-sm font-medium">Hours Lost to Admin per Recruiter per Week</label>
+                  <label className="text-ivory/80 text-sm font-medium">Hours Lost to Admin per Team Member per Week</label>
                   <span className="text-teal font-bold text-lg">{hoursLost}h</span>
                 </div>
                 <input
@@ -138,7 +138,7 @@ export function ROICalculator() {
             </div>
 
             <p className="text-ivory/40 text-sm text-center">
-              These are conservative estimates. Most agencies exceed them within 90 days.
+              These are conservative estimates. Most businesses exceed them within 90 days.
             </p>
 
             {/* CTA */}

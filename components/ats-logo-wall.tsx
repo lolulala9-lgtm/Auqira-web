@@ -2,11 +2,12 @@
 
 export function ATSLogoWall() {
   const tools = [
+    // Recruitment
     'Bullhorn', 'Greenhouse', 'Lever', 'JobAdder', 'Vincere', 'Loxo', 'Workable', 'SmartRecruiters', 'HireEZ', 'Gem',
+    // Real Estate
     'Follow Up Boss', 'CINC', 'Sierra Interactive', 'Chime', 'LionDesk', 'KvCORE',
+    // Marketing
     'HubSpot', 'Supermetrics', 'Looker Studio', 'Monday.com', 'Asana', 'Notion', 'Canva',
-    'Shopify', 'Gorgias', 'Klaviyo', 'Triple Whale', 'Yotpo', 'Google Analytics',
-    'Muckrack', 'Cision', 'Prowly', 'Slack'
   ];
 
   const loopTools = [...tools, ...tools, ...tools];
@@ -37,12 +38,9 @@ export function ATSLogoWall() {
         </div>
       </div>
 
-      {/* Smooth dark-to-ivory gradient transition */}
       <div
         className="w-full h-[80px]"
-        style={{
-          background: 'linear-gradient(to bottom, #0D0F14, #FDFBF7)',
-        }}
+        style={{ background: 'linear-gradient(to bottom, #0D0F14, #FDFBF7)' }}
       />
     </section>
   );

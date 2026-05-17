@@ -29,7 +29,7 @@ const rows: ComparisonRow[] = [
     diy: '3–6 months',
   },
   {
-    label: 'Recruitment-specific',
+    label: 'Industry-specific knowledge',
     auqira: 'check',
     hourly: 'rarely',
     enterprise: 'rarely',

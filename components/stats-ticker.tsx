@@ -2,17 +2,14 @@
 
 export function StatsTicker() {
   const stats = [
-    '60–70% of recruiter time is spent on tasks AI can automate — LinkedIn Workforce Report',
-    'Real estate agents spend 30–45 min writing each listing description — AI gets it to 8 minutes',
-    '17 hours saved per recruiter per week with structured AI workflows — McKinsey',
+    '60-70% of service business time is spent on tasks AI can automate — McKinsey',
+    'Real estate agents spend 30-45 min writing each listing description — AI gets it to 8 minutes',
+    '10+ hours saved per team member per week with structured AI workflows — McKinsey',
     'Marketing agencies waste 4 hrs/week per person on manual client reporting',
-    '50% reduction in time-to-fill at AI-adopting agencies — Aptitude Research 2024',
-    'E-commerce brands see 40% customer service ticket deflection with AI implementation',
-    '73% of AI pilots fail without a structured implementation plan — Gartner',
-    'PR teams write 30+ personalized media pitches per campaign — AI trims this to 4 min each',
-    'Agencies using AI workflows report 30–50% faster proposal turnaround',
-    'Average boutique agency recovers $40,000+ per employee annually with the right AI stack',
-    '$1,500 audit · 7-day delivery · vendor-agnostic · compatible with 20+ tools',
+    '50% reduction in time-to-fill at AI-adopting recruitment businesses — Aptitude Research 2024',
+    'Businesses using AI workflows report 30-50% faster proposal turnaround',
+    'Average boutique business recovers $40,000+ per employee annually with the right AI stack',
+    '$1,500 audit \u00b7 7-day delivery \u00b7 vendor-agnostic \u00b7 compatible with 20+ tools',
   ];
 
   const loopItems = [...stats, ...stats];
@@ -32,7 +29,7 @@ export function StatsTicker() {
             <span className="text-white text-[14px] font-medium whitespace-nowrap px-4">
               {item}
             </span>
-            <span className="text-teal font-bold text-lg">·</span>
+            <span className="text-teal font-bold text-lg">&middot;</span>
           </span>
         ))}
       </div>

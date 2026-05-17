@@ -37,7 +37,7 @@ const cards = [
     type: 'quote' as const,
     theme: 'dark' as const,
     quote:
-      'A single additional placement per quarter more than covers the cost of an operational audit. The question for boutique agency founders is not whether AI has ROI — it\'s whether they can afford to let competitors find it first.',
+      'A single additional win per quarter more than covers the cost of an operational audit. The question for boutique business founders is not whether AI has ROI — it\'s whether they can afford to let competitors find it first.',
     attribution: 'Staffing Industry Analysts, 2024',
     accentLine: 'it\'s whether they can afford to let competitors find it first.',
   },
@@ -61,7 +61,7 @@ export function DataWall() {
             What the data says
           </p>
           <h2 className="text-[2.5rem] lg:text-[4rem] font-bold text-obsidian leading-[1.1] tracking-[-0.02em] max-w-4xl">
-            The AI opportunity in recruiting is not coming. It&apos;s here.
+            The AI opportunity in service businesses is not coming. It&apos;s here.
           </h2>
         </AnimateOnScroll>
 

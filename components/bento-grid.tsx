@@ -178,7 +178,7 @@ export function BentoGrid() {
                     The Debrief Call — Where It Gets Interesting
                   </h3>
                   <p className="text-white/80 text-sm leading-relaxed">
-                    7 days after the discovery call, we walk through every finding together on Zoom. You ask questions. I show you how to present the top 3 opportunities to your partners. And if it makes sense, we talk about what implementation would look like.
+                    7 days after the discovery call, I walk through every finding together on Zoom. You ask questions. I show you how to present the top 3 opportunities to your partners. And if it makes sense, we talk about what implementation would look like.
                   </p>
                 </div>
 

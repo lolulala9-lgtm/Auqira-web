@@ -17,7 +17,7 @@ export function Footer() {
               Au<span className="text-teal">q</span>ira
             </h3>
             <p className="text-slate-custom text-sm leading-relaxed">
-              Fixed-price AI audits for boutique recruitment agencies.
+              Fixed-price AI Workflow Audits for Real Estate, Marketing, and Recruitment businesses.
             </p>
             <a
               href="https://linkedin.com/in/sohamsingh"

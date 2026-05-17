@@ -1,19 +1,19 @@
 'use client';
 
-import { Check, ShieldCheck } from 'lucide-react';
+import { useState } from 'react';
+import { Check, ShieldCheck, ChevronDown } from 'lucide-react';
 import { AnimateOnScroll } from './animate-on-scroll';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export function PricingSection() {
+  const [faqOpen, setFaqOpen] = useState(false);
+
   return (
     <section id="pricing" className="bg-cream py-28 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <AnimateOnScroll variant="fadeUp" delay={0.1} className="mb-16">
-          <p className="text-teal font-semibold text-[11px] tracking-widest uppercase mb-3">
-            Pricing
-          </p>
-          <h2 className="text-[2.5rem] lg:text-[4rem] font-bold text-obsidian leading-[1.1] tracking-[-0.02em]">
-            Fixed-Price Engagement.
-          </h2>
+          <p className="text-teal font-semibold text-[11px] tracking-widest uppercase mb-3">Pricing</p>
+          <h2 className="text-[2.5rem] lg:text-[4rem] font-bold text-obsidian leading-[1.1] tracking-[-0.02em]">Fixed-Price Engagement.</h2>
         </AnimateOnScroll>
 
         <div className="flex justify-center">
@@ -24,15 +24,21 @@ export function PricingSection() {
               </span>
             </div>
 
-            {/* Premium Card */}
             <div className="card-premium border-2 border-teal p-12 space-y-8 mt-4 relative">
+              {/* Founding client banner */}
+              <div className="bg-teal/5 border border-teal/20 rounded-xl p-4 text-center">
+                <p className="text-sm font-semibold text-teal">
+                  Founding client rate — 3 spots only, in exchange for a testimonial. Spots are limited.
+                </p>
+              </div>
+
               <div className="text-center space-y-3">
                 <p className="text-teal text-sm font-semibold uppercase tracking-wider">Complete AI Audit</p>
                 <div className="space-y-1">
                   <span className="text-7xl font-bold text-obsidian">$1,500</span>
                   <p className="text-slate-custom text-sm line-through">Normally $3,000</p>
                 </div>
-                <p className="text-teal font-bold text-sm">Founding client rate available for 3 agencies only.</p>
+                <p className="text-teal font-bold text-sm">Founding client rate available for 3 businesses only.</p>
               </div>
 
               <div className="space-y-3 border-y border-border-custom py-8">
@@ -44,7 +50,7 @@ export function PricingSection() {
                   'Conservative ROI Projections — with visible math, not just numbers',
                   '90-Day Implementation Roadmap',
                   'Executive Debrief & Q&A',
-                  'ATS Integration Compatibility Check (Bullhorn, Greenhouse, Lever, JobAdder, Vincere, Loxo + more)',
+                  'Tool Integration Compatibility Check (ATS, CRM, CMS + more)',
                   'Shareable Presentation Deck (present to your partners in 60 seconds)',
                 ].map((feature, idx) => (
                   <div key={idx} className="flex gap-3">
@@ -59,8 +65,41 @@ export function PricingSection() {
                 <ShieldCheck className="w-5 h-5 text-teal flex-shrink-0 mt-0.5" />
                 <p className="text-sm text-slate-custom leading-relaxed">
                   <span className="font-semibold text-obsidian">Risk-Free Guarantee:</span>{' '}
-                  If the audit doesn&apos;t surface at least 5 specific, actionable AI opportunities for your agency, I&apos;ll refund your fee in full. No questions asked.
+                  If the audit doesn&apos;t surface at least 5 specific, actionable AI opportunities for your business, I&apos;ll refund your fee in full. No questions asked.
                 </p>
+              </div>
+
+              {/* Founding client FAQ */}
+              <div className="rounded-xl border border-gray-200 overflow-hidden">
+                <button
+                  onClick={() => setFaqOpen(!faqOpen)}
+                  className="w-full text-left px-5 py-4 bg-ivory flex items-center justify-between group"
+                  aria-expanded={faqOpen}
+                >
+                  <span className="font-semibold text-obsidian text-sm pr-4 group-hover:text-teal transition-colors">
+                    Why the founding client rate?
+                  </span>
+                  <motion.div animate={{ rotate: faqOpen ? 180 : 0 }} transition={{ duration: 0.3 }}>
+                    <ChevronDown className="w-4 h-4 text-slate-custom" />
+                  </motion.div>
+                </button>
+                <AnimatePresence initial={false}>
+                  {faqOpen && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="overflow-hidden"
+                    >
+                      <div className="px-5 py-4 bg-gray-50 border-t border-gray-200">
+                        <p className="text-slate-custom text-sm leading-relaxed">
+                          Auqira is in its earliest stage. In exchange for the discounted rate, I ask only for an honest testimonial if the audit delivers value. No other obligation.
+                        </p>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
 
               <a

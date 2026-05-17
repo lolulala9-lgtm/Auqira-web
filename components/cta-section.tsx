@@ -34,7 +34,7 @@ export function CTASection() {
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <AnimateOnScroll variant="fadeUp" delay={0.1}>
           <p className="uppercase-label text-teal font-semibold mb-8">
-            5 Industries. One Audit. 7 Days.
+            3 Industries. One Audit. 7 Days.
           </p>
         </AnimateOnScroll>
 
@@ -46,7 +46,7 @@ export function CTASection() {
 
         <AnimateOnScroll variant="fadeUp" delay={0.3}>
           <p className="text-lg text-[#A1A1AA] mb-10 max-w-2xl mx-auto leading-relaxed">
-            Whether you're placing candidates, selling properties, running campaigns, shipping products, or pitching journalists — the workflows are different. The opportunity is the same.
+            Whether you&apos;re placing candidates, selling properties, or running campaigns — the workflows are different. The opportunity is the same.
           </p>
         </AnimateOnScroll>
 
@@ -62,10 +62,10 @@ export function CTASection() {
               <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
             </a>
             <a
-              href="#sample-audit"
+              href="mailto:hello@auqira.com?subject=Sample%20Report%20Request%20%E2%80%94%20%5Byour%20industry%5D"
               className="inline-flex items-center justify-center px-8 py-4 border border-white/20 text-white rounded-full font-semibold hover:bg-white/5 transition-all duration-300 text-base"
             >
-              View Sample Report
+              Request Sample Report
             </a>
           </div>
         </AnimateOnScroll>
@@ -74,7 +74,7 @@ export function CTASection() {
           <div className="flex flex-wrap justify-center gap-6 text-[12px] text-[#71717A] font-medium">
             <span className="inline-flex items-center gap-1.5"><ShieldCheck className="w-3.5 h-3.5" /> 50% upfront, 50% on delivery</span>
             <span className="hidden sm:inline text-[#3F3F46]">|</span>
-            <span className="inline-flex items-center gap-1.5"><ClipboardList className="w-3.5 h-3.5" /> Full refund if we don&apos;t find 5 opportunities</span>
+            <span className="inline-flex items-center gap-1.5"><ClipboardList className="w-3.5 h-3.5" /> Full refund if I don&apos;t find 5 opportunities</span>
             <span className="hidden sm:inline text-[#3F3F46]">|</span>
             <span className="inline-flex items-center gap-1.5"><Zap className="w-3.5 h-3.5" /> 7-day delivery, guaranteed</span>
           </div>

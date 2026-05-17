@@ -10,6 +10,7 @@ import { ROICalculator } from '@/components/roi-calculator';
 import { ComparisonTable } from '@/components/comparison-table';
 import { IsThisForYou } from '@/components/is-this-for-you';
 import { PricingSection } from '@/components/pricing-section';
+import { PostAuditSection } from '@/components/post-audit-section';
 import { AboutSection } from '@/components/about-section';
 import { FAQSection } from '@/components/faq-section';
 import { CTASection } from '@/components/cta-section';
@@ -37,6 +38,7 @@ export default function Home() {
         <ComparisonTable />
         <IsThisForYou />
         <PricingSection />
+        <PostAuditSection />
         <AboutSection />
         <FAQSection />
 

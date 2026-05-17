@@ -6,7 +6,7 @@ import { Clock, Puzzle, Timer, Map } from 'lucide-react';
 const problems = [
   {
     number: '01',
-    title: 'Recruiters Buried in Manual Tasks',
+    title: 'Teams Buried in Manual Tasks',
     description: 'Hours daily on admin work that should be automated, pulling focus from revenue-generating activities.',
     icon: Clock,
   },
@@ -19,7 +19,7 @@ const problems = [
   {
     number: '03',
     title: 'Slow Response Times',
-    description: 'Manual workflows delay candidate outreach and engagement, costing placements and reputation.',
+    description: 'Manual workflows delay client outreach and response times, costing deals, placements, and reputation.',
     icon: Timer,
   },
   {
@@ -39,7 +39,7 @@ export function ProblemSection() {
             The Challenge
           </p>
           <h2 className="text-[2.5rem] lg:text-[4rem] font-bold text-obsidian leading-[1.1] tracking-[-0.02em] max-w-3xl">
-            Most Agencies Leave AI Value on the Table.
+            Most Businesses Leave AI Value on the Table.
           </h2>
         </AnimateOnScroll>
 
