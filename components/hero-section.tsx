@@ -2,15 +2,15 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import { AnimateOnScroll } from './animate-on-scroll';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Target, Home, Megaphone, ShoppingBag, Newspaper } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const industries = [
-  { id: 'recruitment', label: '🎯 Recruitment', shortLabel: 'Recruitment & Staffing' },
-  { id: 'real-estate', label: '🏘️ Real Estate', shortLabel: 'Real Estate' },
-  { id: 'marketing', label: '📣 Marketing', shortLabel: 'Marketing & Creative' },
-  { id: 'ecommerce', label: '🛍️ E-commerce', shortLabel: 'E-commerce / DTC' },
-  { id: 'pr', label: '📰 PR & Comms', shortLabel: 'PR & Comms' },
+  { id: 'recruitment', icon: <Target className="w-3.5 h-3.5" />, label: 'Recruitment' },
+  { id: 'real-estate', icon: <Home className="w-3.5 h-3.5" />, label: 'Real Estate' },
+  { id: 'marketing', icon: <Megaphone className="w-3.5 h-3.5" />, label: 'Marketing' },
+  { id: 'ecommerce', icon: <ShoppingBag className="w-3.5 h-3.5" />, label: 'E-commerce' },
+  { id: 'pr', icon: <Newspaper className="w-3.5 h-3.5" />, label: 'PR & Comms' },
 ];
 
 const industryStats: Record<string, { stat1: [string, string], stat2: [string, string], stat3: [string, string], stat4: [string, string] }> = {
@@ -126,12 +126,13 @@ export function HeroSection() {
               <button
                 key={ind.id}
                 onClick={() => setActiveIndustry(ind.id)}
-                className={`transition-all duration-200 rounded-full px-[18px] py-[8px] text-[13px] border ${
+                className={`inline-flex items-center gap-2 transition-all duration-200 rounded-full px-[18px] py-[8px] text-[13px] border ${
                   activeIndustry === ind.id
                     ? 'bg-[#0D5C63] text-white border-[#0D5C63]'
                     : 'bg-transparent text-[#A1A1AA] border-white/15 hover:border-white/35'
                 }`}
               >
+                {ind.icon}
                 {ind.label}
               </button>
             ))}

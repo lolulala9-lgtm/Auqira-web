@@ -1,19 +1,32 @@
 'use client';
 
 import { AnimateOnScroll } from './animate-on-scroll';
+import { ShieldCheck, Layers, Globe } from 'lucide-react';
 
-const credentials = [
-  'AI Systems Builder',
-  'Enterprise AI Consultant',
-  'Vendor-Agnostic Advisor',
+const pillars = [
+  {
+    icon: <ShieldCheck className="w-5 h-5 text-teal" />,
+    title: 'Vendor-Agnostic',
+    body: 'No affiliate deals, no software commissions. Every recommendation is based entirely on what fits your existing stack.',
+  },
+  {
+    icon: <Layers className="w-5 h-5 text-teal" />,
+    title: 'Infrastructure-Level Knowledge',
+    body: 'Built on years of designing AI systems from the ground up — understanding exactly where tools fail in real business workflows.',
+  },
+  {
+    icon: <Globe className="w-5 h-5 text-teal" />,
+    title: 'Fixed Scope, Fixed Price',
+    body: 'No runaway consulting engagements. One audit, one price, delivered in 7 days — with a full refund if we don\'t surface 5 real opportunities.',
+  },
 ];
 
 export function AboutSection() {
   return (
     <section className="bg-ivory py-28 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left side - text */}
+        <div className="grid lg:grid-cols-2 gap-16 items-start">
+          {/* Left — text */}
           <div className="space-y-6">
             <AnimateOnScroll variant="fadeUp" delay={0.1}>
               <div>
@@ -26,45 +39,33 @@ export function AboutSection() {
               </div>
             </AnimateOnScroll>
             <AnimateOnScroll variant="fadeUp" delay={0.2}>
-              <p className="text-lg text-slate-custom leading-relaxed mb-6">
-                Before building Auqira, I spent years building AI systems at the infrastructure level — understanding not just what AI tools claim to do, but exactly how they process data, where they fail, and which ones actually integrate with real business workflows.
+              <p className="text-lg text-slate-custom leading-relaxed">
+                Before building Auqira, we spent years building AI systems at the infrastructure level — understanding not just what AI tools claim to do, but exactly how they process data, where they fail, and which ones actually integrate with real business workflows.
               </p>
             </AnimateOnScroll>
             <AnimateOnScroll variant="fadeUp" delay={0.3}>
-              <p className="text-lg text-slate-custom leading-relaxed mb-6">
-                Auqira exists because most recruitment agencies are using AI like a novelty. I built this audit to change that — to give boutique founders the same structured AI strategy that enterprise firms pay $100K+ to get, delivered in 7 days for a fraction of the cost.
+              <p className="text-lg text-slate-custom leading-relaxed">
+                Auqira exists because most service businesses are using AI like a novelty. The audit changes that — giving founders and ops leaders the same structured AI strategy that enterprise firms pay $100K+ to get, delivered in 7 days for a fraction of the cost.
               </p>
             </AnimateOnScroll>
           </div>
 
-          {/* Right side - founder card */}
-          <AnimateOnScroll variant="fadeLeft" delay={0.4} className="flex flex-col items-center space-y-6">
-            {/* Founder card */}
-            <div className="card-premium p-8 w-full max-w-sm space-y-6 border-t-4 border-t-teal">
-              {/* Stylized monogram */}
-              <div className="w-20 h-20 bg-gradient-to-br from-teal to-[#0a4a51] rounded-xl flex items-center justify-center shadow-lg mx-auto">
-                <span className="text-3xl font-bold text-ivory/90 tracking-tight">SS</span>
+          {/* Right — trust pillars */}
+          <AnimateOnScroll variant="fadeLeft" delay={0.4} className="flex flex-col gap-4">
+            {pillars.map((pillar, idx) => (
+              <div
+                key={idx}
+                className="card-premium p-6 flex items-start gap-4 border-l-4 border-l-teal"
+              >
+                <div className="w-10 h-10 rounded-xl bg-teal/10 flex items-center justify-center shrink-0">
+                  {pillar.icon}
+                </div>
+                <div>
+                  <p className="font-bold text-obsidian mb-1">{pillar.title}</p>
+                  <p className="text-sm text-slate-custom leading-relaxed">{pillar.body}</p>
+                </div>
               </div>
-
-              <div className="text-center space-y-2">
-                <p className="text-xl font-bold text-obsidian">Soham Singh</p>
-                <p className="text-teal text-xs font-semibold uppercase tracking-widest">
-                  Founder, Auqira · AI Infrastructure Builder
-                </p>
-              </div>
-
-              {/* Credential badges */}
-              <div className="flex flex-wrap justify-center gap-2">
-                {credentials.map((tag, idx) => (
-                  <span
-                    key={idx}
-                    className="inline-block px-3 py-1.5 bg-teal/10 text-teal text-[10px] font-semibold uppercase tracking-wider rounded-full border border-teal/20"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </div>
+            ))}
           </AnimateOnScroll>
         </div>
       </div>

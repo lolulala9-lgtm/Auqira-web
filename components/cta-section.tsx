@@ -1,7 +1,7 @@
 'use client';
 
 import { AnimateOnScroll } from './animate-on-scroll';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ShieldCheck, ClipboardList, Zap } from 'lucide-react';
 
 export function CTASection() {
   return (
@@ -72,11 +72,11 @@ export function CTASection() {
 
         <AnimateOnScroll variant="fadeUp" delay={0.5}>
           <div className="flex flex-wrap justify-center gap-6 text-[12px] text-[#71717A] font-medium">
-            <span>🔒 50% upfront, 50% on delivery</span>
+            <span className="inline-flex items-center gap-1.5"><ShieldCheck className="w-3.5 h-3.5" /> 50% upfront, 50% on delivery</span>
             <span className="hidden sm:inline text-[#3F3F46]">|</span>
-            <span>📋 Full refund if we don&apos;t find 5 opportunities</span>
+            <span className="inline-flex items-center gap-1.5"><ClipboardList className="w-3.5 h-3.5" /> Full refund if we don&apos;t find 5 opportunities</span>
             <span className="hidden sm:inline text-[#3F3F46]">|</span>
-            <span>⚡ 7-day delivery, guaranteed</span>
+            <span className="inline-flex items-center gap-1.5"><Zap className="w-3.5 h-3.5" /> 7-day delivery, guaranteed</span>
           </div>
         </AnimateOnScroll>
       </div>
