@@ -70,7 +70,7 @@ export function FAQSection() {
         <div className="space-y-4">
           {faqs.map((faq, index) => (
             <AnimateOnScroll key={index} variant="fadeUp" delay={0.3 + index * 0.05}>
-              <div className="overflow-hidden rounded-xl border border-gray-200 hover:border-teal/30 transition-colors duration-300">
+              <div className="overflow-hidden rounded-xl border border-gray-200 hover:border-teal/30 transition-colors duration-300 glow-card">
                 <button
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
                   className="w-full text-left px-6 py-5 bg-ivory flex items-center justify-between group"

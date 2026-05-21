@@ -73,7 +73,7 @@ export function DataWall() {
               delay={0.1 + index * 0.08}
             >
               <div
-                className={`break-inside-avoid rounded-xl p-7 transition-all duration-200 hover:scale-[1.01] ${
+                className={`break-inside-avoid rounded-xl p-7 transition-all duration-200 hover:scale-[1.01] glow-card ${
                   card.theme === 'dark'
                     ? 'text-white shadow-xl'
                     : card.theme === 'teal'

@@ -1,7 +1,9 @@
 'use client';
 
+import { useRef } from 'react';
 import { AnimateOnScroll } from './animate-on-scroll';
 import { Check, X } from 'lucide-react';
+import { motion, useInView } from 'framer-motion';
 
 type CellValue = string | 'check' | 'x' | 'rarely' | 'sometimes' | 'varies' | 'depends';
 
@@ -58,12 +60,48 @@ const rows: ComparisonRow[] = [
   },
 ];
 
-function renderCell(value: CellValue, isAuqira: boolean = false) {
+/* ── Animated icon wrapper (scale-in on scroll) ── */
+function AnimatedIcon({
+  children,
+  rowIndex,
+}: {
+  children: React.ReactNode;
+  rowIndex: number;
+}) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: '-40px' });
+
+  return (
+    <motion.span
+      ref={ref}
+      initial={{ opacity: 0, scale: 0.3 }}
+      animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.3 }}
+      transition={{
+        duration: 0.4,
+        delay: rowIndex * 0.07,
+        ease: [0.16, 1, 0.3, 1],
+      }}
+      className="inline-flex"
+    >
+      {children}
+    </motion.span>
+  );
+}
+
+function renderCell(value: CellValue, isAuqira: boolean = false, rowIndex: number = 0) {
   if (value === 'check') {
-    return <Check className={`w-5 h-5 mx-auto ${isAuqira ? 'text-teal' : 'text-teal/60'}`} />;
+    return (
+      <AnimatedIcon rowIndex={rowIndex}>
+        <Check className={`w-5 h-5 mx-auto ${isAuqira ? 'text-teal' : 'text-teal/60'}`} />
+      </AnimatedIcon>
+    );
   }
   if (value === 'x') {
-    return <X className="w-5 h-5 mx-auto text-gray-300" />;
+    return (
+      <AnimatedIcon rowIndex={rowIndex}>
+        <X className="w-5 h-5 mx-auto text-gray-300" />
+      </AnimatedIcon>
+    );
   }
   const muted = ['rarely', 'sometimes', 'varies', 'depends'].includes(value);
   return (
@@ -87,14 +125,27 @@ export function ComparisonTable() {
         </AnimateOnScroll>
 
         <AnimateOnScroll variant="fadeUp" delay={0.2}>
-          <div className="overflow-x-auto rounded-2xl border border-gray-200 shadow-sm">
+          {/* ── Glow card wrapper ── */}
+          <div className="glow-card overflow-x-auto rounded-2xl border border-gray-200 shadow-sm">
             <table className="w-full text-left min-w-[640px]">
               <thead>
                 <tr className="bg-teal text-ivory">
                   <th className="px-5 py-4 text-xs uppercase tracking-wider font-semibold w-[20%]"></th>
-                  <th className="px-5 py-4 text-xs uppercase tracking-wider font-bold w-[20%] bg-[#0a4a51]">
+
+                  {/* ── Floating Auqira header ── */}
+                  <th
+                    className="relative px-6 py-5 text-xs uppercase tracking-wider font-bold w-[20%] bg-[#0a4a51]"
+                    style={{
+                      boxShadow: '-4px 0 16px rgba(13,92,99,0.25), 4px 0 16px rgba(13,92,99,0.25)',
+                    }}
+                  >
+                    {/* Founding Offer badge */}
+                    <span className="absolute -top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gold text-obsidian text-[10px] font-bold tracking-wide uppercase px-3 py-0.5 rounded-full whitespace-nowrap shadow-md">
+                      Founding Offer
+                    </span>
                     Auqira Audit
                   </th>
+
                   <th className="px-5 py-4 text-xs uppercase tracking-wider font-semibold w-[20%]">
                     Hourly AI Consultant
                   </th>
@@ -110,15 +161,28 @@ export function ComparisonTable() {
                 {rows.map((row, idx) => (
                   <tr
                     key={idx}
-                    className={`border-t border-gray-100 ${idx % 2 === 0 ? 'bg-ivory' : 'bg-cream/50'}`}
+                    className={`border-t border-gray-100 transition-colors duration-200 group
+                      ${idx % 2 === 0 ? 'bg-ivory' : 'bg-cream/50'}
+                      hover:bg-teal/[0.04]`}
                   >
-                    <td className="px-5 py-4 text-sm font-semibold text-obsidian">{row.label}</td>
-                    <td className="px-5 py-4 text-center border-l-2 border-l-teal/30 bg-teal/[0.03]">
-                      {renderCell(row.auqira, true)}
+                    {/* Row label with hover left-border accent */}
+                    <td className="px-5 py-4 text-sm font-semibold text-obsidian border-l-2 border-l-transparent group-hover:border-l-teal transition-colors duration-200">
+                      {row.label}
                     </td>
-                    <td className="px-5 py-4 text-center">{renderCell(row.hourly)}</td>
-                    <td className="px-5 py-4 text-center">{renderCell(row.enterprise)}</td>
-                    <td className="px-5 py-4 text-center">{renderCell(row.diy)}</td>
+
+                    {/* ── Floating Auqira data cell ── */}
+                    <td
+                      className="px-6 py-5 text-center border-l-2 border-r-2 border-l-teal/30 border-r-teal/30 bg-teal/[0.04]"
+                      style={{
+                        boxShadow: '-4px 0 12px rgba(13,92,99,0.08), 4px 0 12px rgba(13,92,99,0.08)',
+                      }}
+                    >
+                      {renderCell(row.auqira, true, idx)}
+                    </td>
+
+                    <td className="px-5 py-4 text-center">{renderCell(row.hourly, false, idx)}</td>
+                    <td className="px-5 py-4 text-center">{renderCell(row.enterprise, false, idx)}</td>
+                    <td className="px-5 py-4 text-center">{renderCell(row.diy, false, idx)}</td>
                   </tr>
                 ))}
               </tbody>

@@ -47,7 +47,7 @@ export function AboutSection() {
 
           <AnimateOnScroll variant="fadeLeft" delay={0.4} className="flex flex-col gap-4">
             {pillars.map((pillar, idx) => (
-              <div key={idx} className="card-premium p-6 flex items-start gap-4 border-l-4 border-l-teal">
+              <div key={idx} className="card-premium p-6 flex items-start gap-4 border-l-4 border-l-teal glow-card">
                 <div className="w-10 h-10 rounded-xl bg-teal/10 flex items-center justify-center shrink-0">{pillar.icon}</div>
                 <div>
                   <p className="font-bold text-obsidian mb-1">{pillar.title}</p>

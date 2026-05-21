@@ -94,7 +94,7 @@ export function IndustriesSection() {
         <AnimateOnScroll variant="fadeUp" delay={0.5}>
           <div className="relative">
             <AnimatePresence mode="wait">
-              <motion.div key={activeTab} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }} className="bg-white rounded-3xl border border-obsidian/5 p-6 md:p-10 shadow-sm">
+              <motion.div key={activeTab} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }} className="bg-white rounded-3xl border border-obsidian/5 p-6 md:p-10 shadow-sm glow-card">
                 <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 mb-12">
                   <div className="w-full lg:w-[60%] flex flex-col gap-8">
                     <div>

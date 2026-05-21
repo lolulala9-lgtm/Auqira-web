@@ -1,10 +1,11 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Outfit } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { StructuredData } from '@/components/structured-data'
 import './globals.css'
 
-const inter = Inter({ subsets: ["latin"], display: 'swap' });
+const inter = Inter({ subsets: ["latin"], display: 'swap', variable: '--font-inter' });
+const outfit = Outfit({ subsets: ["latin"], display: 'swap', variable: '--font-outfit', weight: ['400', '500', '600', '700', '800', '900'] });
 
 export const metadata: Metadata = {
   title: 'Auqira | AI Workflow Audit — Fixed Price, 7 Days',
@@ -84,7 +85,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${inter.className} bg-ivory scroll-smooth`}>
+    <html lang="en" className={`${inter.variable} ${outfit.variable} bg-ivory scroll-smooth`}>
       <body className="font-sans antialiased bg-ivory text-obsidian">
         <StructuredData />
         {children}

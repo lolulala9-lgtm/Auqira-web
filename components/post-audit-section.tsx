@@ -14,7 +14,7 @@ export function PostAuditSection() {
 
         <div className="grid md:grid-cols-2 gap-6">
           <AnimateOnScroll variant="fadeUp" delay={0.2}>
-            <div className="card-premium p-8 h-full border-t-4 border-t-teal space-y-4">
+            <div className="card-premium p-8 h-full border-t-4 border-t-teal space-y-4 glow-card">
               <div className="w-10 h-10 rounded-xl bg-teal/10 flex items-center justify-center">
                 <CheckCircle className="w-5 h-5 text-teal" />
               </div>
@@ -29,7 +29,7 @@ export function PostAuditSection() {
           </AnimateOnScroll>
 
           <AnimateOnScroll variant="fadeUp" delay={0.3}>
-            <div className="card-premium p-8 h-full border-t-4 border-t-[#D4AF37] space-y-4">
+            <div className="card-premium p-8 h-full border-t-4 border-t-[#D4AF37] space-y-4 glow-card">
               <div className="w-10 h-10 rounded-xl bg-[#D4AF37]/10 flex items-center justify-center">
                 <Phone className="w-5 h-5 text-[#D4AF37]" />
               </div>

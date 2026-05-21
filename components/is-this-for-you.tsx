@@ -42,7 +42,7 @@ export function IsThisForYou() {
         <div className="grid md:grid-cols-2 gap-6">
           {/* Left column — For You */}
           <AnimateOnScroll variant="fadeUp" delay={0.2}>
-            <div className="card-premium p-8 h-full border-l-4 border-l-teal bg-teal/[0.02] space-y-5">
+            <div className="card-premium p-8 h-full border-l-4 border-l-teal bg-teal/[0.02] space-y-5 glow-card">
               <h3 className="text-lg font-bold text-obsidian flex items-center gap-2">
                 <span className="w-7 h-7 rounded-full bg-teal/10 flex items-center justify-center">
                   <Check className="w-4 h-4 text-teal" />
@@ -59,10 +59,10 @@ export function IsThisForYou() {
               </ul>
             </div>
           </AnimateOnScroll>
-
+ 
           {/* Right column — Not For You */}
           <AnimateOnScroll variant="fadeUp" delay={0.3}>
-            <div className="card-premium p-8 h-full border-l-4 border-l-gray-300 space-y-5">
+            <div className="card-premium p-8 h-full border-l-4 border-l-gray-300 space-y-5 glow-card">
               <h3 className="text-lg font-bold text-obsidian flex items-center gap-2">
                 <span className="w-7 h-7 rounded-full bg-gray-100 flex items-center justify-center">
                   <X className="w-4 h-4 text-gray-400" />

@@ -48,7 +48,7 @@ export function ProblemSection() {
             const Icon = problem.icon;
             return (
               <AnimateOnScroll key={index} variant="fadeUp" delay={0.15 + index * 0.08}>
-                <div className="bg-white rounded-2xl border border-[#E4E4E7] p-8 space-y-4 h-full group hover:shadow-lg hover:scale-[1.01] hover:border-teal/30 transition-all duration-200">
+                <div className="bg-white rounded-2xl border border-[#E4E4E7] p-8 space-y-4 h-full group hover:shadow-lg hover:scale-[1.01] hover:border-teal/30 transition-all duration-200 glow-card">
                   <div className="flex items-center gap-4">
                     <div className="w-10 h-10 rounded-xl bg-teal/10 flex items-center justify-center group-hover:bg-teal/15 transition-colors">
                       <Icon className="w-5 h-5 text-teal" />

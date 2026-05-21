@@ -1,12 +1,70 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Check, ShieldCheck, ChevronDown } from 'lucide-react';
 import { AnimateOnScroll } from './animate-on-scroll';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useInView, useSpring, useTransform } from 'framer-motion';
+
+/* ── Animated counter component ── */
+function AnimatedPrice({ target, inView }: { target: number; inView: boolean }) {
+  const spring = useSpring(0, { stiffness: 50, damping: 20, duration: 1.8 });
+  const display = useTransform(spring, (v) => {
+    const rounded = Math.round(v);
+    return `$${rounded.toLocaleString('en-US')}`;
+  });
+  const [text, setText] = useState('$0');
+
+  useEffect(() => {
+    if (inView) {
+      spring.set(target);
+    }
+  }, [inView, spring, target]);
+
+  useEffect(() => {
+    const unsubscribe = display.on('change', (v) => setText(v));
+    return unsubscribe;
+  }, [display]);
+
+  return <span className="text-7xl font-bold text-obsidian">{text}</span>;
+}
+
+/* ── Stagger animation variants ── */
+const featureListVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.05,
+    },
+  },
+};
+
+const featureItemVariants = {
+  hidden: { opacity: 0, y: 14 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.35, ease: 'easeOut' },
+  },
+};
+
+const features = [
+  'Full Workflow Audit & Analysis',
+  '60-Minute Deep-Dive Discovery Call',
+  'AI Opportunity Matrix',
+  'Tool & Integration Recommendations',
+  'Conservative ROI Projections — with visible math, not just numbers',
+  '90-Day Implementation Roadmap',
+  'Executive Debrief & Q&A',
+  'Tool Integration Compatibility Check (ATS, CRM, CMS + more)',
+  'Shareable Presentation Deck (present to your partners in 60 seconds)',
+];
 
 export function PricingSection() {
   const [faqOpen, setFaqOpen] = useState(false);
+  const priceRef = useRef<HTMLDivElement>(null);
+  const featureRef = useRef<HTMLDivElement>(null);
+  const priceInView = useInView(priceRef, { once: true, margin: '-80px' });
+  const featuresInView = useInView(featureRef, { once: true, margin: '-60px' });
 
   return (
     <section id="pricing" className="bg-cream py-28 px-4 sm:px-6 lg:px-8">
@@ -24,7 +82,17 @@ export function PricingSection() {
               </span>
             </div>
 
-            <div className="card-premium border-2 border-teal p-12 space-y-8 mt-4 relative">
+            {/* Subtle radial teal gradient backdrop */}
+            <div
+              className="pointer-events-none absolute inset-0 -inset-x-16 -inset-y-20 z-0"
+              aria-hidden="true"
+              style={{
+                background:
+                  'radial-gradient(ellipse 60% 50% at 50% 50%, rgba(13,92,99,0.08) 0%, transparent 70%)',
+              }}
+            />
+
+            <div className="glow-card card-premium border-2 border-teal p-12 space-y-8 mt-4 relative z-[1]">
               {/* Founding client banner */}
               <div className="bg-teal/5 border border-teal/20 rounded-xl p-4 text-center">
                 <p className="text-sm font-semibold text-teal">
@@ -32,33 +100,29 @@ export function PricingSection() {
                 </p>
               </div>
 
-              <div className="text-center space-y-3">
+              <div ref={priceRef} className="text-center space-y-3">
                 <p className="text-teal text-sm font-semibold uppercase tracking-wider">Complete AI Audit</p>
                 <div className="space-y-1">
-                  <span className="text-7xl font-bold text-obsidian">$1,500</span>
+                  <AnimatedPrice target={1500} inView={priceInView} />
                   <p className="text-slate-custom text-sm line-through">Normally $3,000</p>
                 </div>
                 <p className="text-teal font-bold text-sm">Founding client rate available for 3 businesses only.</p>
               </div>
 
-              <div className="space-y-3 border-y border-border-custom py-8">
-                {[
-                  'Full Workflow Audit & Analysis',
-                  '60-Minute Deep-Dive Discovery Call',
-                  'AI Opportunity Matrix',
-                  'Tool & Integration Recommendations',
-                  'Conservative ROI Projections — with visible math, not just numbers',
-                  '90-Day Implementation Roadmap',
-                  'Executive Debrief & Q&A',
-                  'Tool Integration Compatibility Check (ATS, CRM, CMS + more)',
-                  'Shareable Presentation Deck (present to your partners in 60 seconds)',
-                ].map((feature, idx) => (
-                  <div key={idx} className="flex gap-3">
+              <motion.div
+                ref={featureRef}
+                className="space-y-3 border-y border-border-custom py-8"
+                variants={featureListVariants}
+                initial="hidden"
+                animate={featuresInView ? 'visible' : 'hidden'}
+              >
+                {features.map((feature, idx) => (
+                  <motion.div key={idx} className="flex gap-3" variants={featureItemVariants}>
                     <Check className="w-5 h-5 text-teal flex-shrink-0 mt-0.5" />
                     <p className="text-slate-custom font-medium text-sm">{feature}</p>
-                  </div>
+                  </motion.div>
                 ))}
-              </div>
+              </motion.div>
 
               {/* Risk reversal box */}
               <div className="rounded-xl border border-teal/30 bg-teal/5 p-5 flex gap-3">
@@ -121,3 +185,4 @@ export function PricingSection() {
     </section>
   );
 }
+
